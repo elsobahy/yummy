@@ -1,0 +1,118 @@
+
+body{
+    background-color:#000;
+}
+.div1{
+    
+    background-color: #000;
+    width: 0px;
+    transition:   display 0.5s;
+}
+.nav{
+    overflow: hidden;
+    z-index: 77777777;
+}
+.div2{
+    
+    width: 60px;
+    height: 100vh;
+
+    z-index: 22299;
+    background-color: #f8f6f6;
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+.top-80{
+   bottom: 20px;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+
+#contact input ,#sear input{
+    background-color: #000;
+    border: none;
+    border-bottom: 0.5px solid white;
+    box-shadow: 0 .5rem 1rem rgba(255,255,255,.1)!important;
+}
+
+li{
+cursor: pointer;
+}
+.loading-screen{
+    inset: 0;
+    background-color: #000;
+    z-index: 9999;
+    display: flex;
+}
+.alert-danger{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+ .alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.is-invalid{
+    border: 1px solid red !important;
+}
+.is-valid{
+    border: 1px solid green !important; 
+}
+#categ .shadow ,#areaaa .shadow ,#integ .shadow{
+    box-shadow: 0 .5rem 1rem rgba(152, 138, 138, 0.15)!important;
+ 
+}
+.youtube{
+background-color: rgb(175, 13, 13) ;
+}
+.fa-city {
+    color: #e65a50ab;
+}
+.fa-bowl-food {
+    color: #9ee650ab;
+}
+.rounded {
+    border-radius: .25rem!important;
+    
+}
+    
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255,255,255,.7);
+    /* background-color: rgba(0, 0, 0,.5); */
+    text-align: center;
+    /* color: tomato; */
+    color: #000;
+    font-weight: 800;
+    transition: all 1s;
+   
+}
+.movie{
+    overflow: hidden;
+    border-radius: 5px;
+}
+ 
+.movie:hover .layer{
+    transition: all 1s;
+   top: 0%;
+ }
+ .align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.p11{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    
+}

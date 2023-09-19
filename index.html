@@ -1,0 +1,199 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+
+    
+    <!-- loading-screen -->
+    <div class="loading-screen position-fixed  justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-4x  text-white"></i>
+    </div>
+    <!-- navbar -->
+    <nav class=" nav position-fixed ">
+        <div class="div1  text-white fw-light ">
+            <div class="py-5">
+                <ul>
+                    <li class="mb-4 bg-gradient" id="search">search</li>
+
+                    <li class="mb-4 bg-gradient" id="category">Categories</li>
+                    <li class="mb-4 bg-gradient" id="area">Area</li>
+                    <li class="mb-4 bg-gradient " id="ingredient"> Ingredients</li>
+
+                    <li class="mb-4 bg-gradient" id="contactUs">Contact Us </li>
+                </ul>
+            </div>
+            <div class="position-absolute   top-80">
+                <div class="text-muted px-5">
+                    <i class="fab fa-facebook-f me-2 "></i>
+                    <i class="fab fa-twitter me-2"></i>
+                    <i class="fas fa-globe me-2"></i>
+                </div>
+
+                <div class="text-muted p-3 ">
+                    <span>Contact Us
+
+                        Copyright Â© 2019 All Rights
+
+                        Reserved.</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="div2 position-relative ">
+            <div> <img src="assets (2)/asset 0.png" class="w-75 py-4"></div>
+
+            <div class="position-absolute top-50 ms-4 fs-4 fw-bold">
+                <i class="fa fa-align-justify fa-times close  "></i>
+                <i class="fa fa-align-justify open "></i>
+            </div>
+            <div class=" position-absolute bottom-0 p-3">
+                <div> <i class="fas fa-globe  mb-2"></i></div>
+                <div> <i class="fas fa-share-alt"></i></div>
+            </div>
+        </div>
+
+    </nav>
+    
+    <section class="container  py-5 w-75">
+
+        <div class="row  " id="asmaa">
+
+
+
+        </div>
+    </section>
+    <!-- showData inFirst section -->
+    <section class="container meals-section w-75 ">
+
+        <div class="row  " id="demo">
+
+
+
+        </div>
+    </section>
+
+
+    <!-- discreption of meals -->
+    <section class="w-75  m-auto">
+        <div id="myRow" class="row py-5">
+            <ul id="recipes"></ul>
+            <ul id="tags"></ul>
+        </div>
+    </section>
+
+    <!-- category -->
+    <section class="container hidden w-75 ">
+        <div class="loading-screen position-fixed  justify-content-center align-items-center">
+            <i class="fa fa-spinner fa-spin fa-4x  text-white"></i>
+        </div>
+        <div class="row"  style="display: none;" id="categ">
+
+
+    </section>
+    <!-- search -->
+
+    <section class="container hidden mb-5 " id="sear" style="display: none;">
+        <div class="loading-screen position-fixed  justify-content-center align-items-center">
+            <i class="fa fa-spinner fa-spin fa-4x  text-white"></i>
+        </div>
+        <div class="row ">
+            <div class="col-md-6">
+                <input type="text" class="w-100 text-white fw-light p-2" placeholder="search by Name"
+                    onkeyup="search(event.target.value)">
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="w-100 text-white fw-light p-2 searchLetter"
+                    placeholder="search by firstLetter" onkeyup="search(event.target.value)" maxlength="1">
+            </div>
+        </div>
+    </section>
+
+    <!-- section searchbyname and letter -->
+ <section class="row container   m-auto" id="section-search"></section> 
+  
+</section>
+
+
+    <!-- area -->
+    <section class="container  w-75" >
+        <div class="loading-screen position-fixed  justify-content-center align-items-center">
+            <i class="fa fa-spinner fa-spin fa-4x  text-white"></i>
+        </div>
+        <div class="row" id="areaaa" style="display: none;">
+
+        </div>
+    </section>
+    <!-- ingredient  -->
+    <section class="container hidden w-75">
+        <div class="loading-screen position-fixed  justify-content-center align-items-center">
+            <i class="fa fa-spinner fa-spin fa-4x  text-white"></i>
+        </div>
+        <div class="row" id="integ" style="display: none;">
+
+
+        </div>
+    </section>
+    <!-- contact -->
+
+    <section class="  hidden" id="contact"  style="display: none;">
+        <div class="loading-screen position-fixed  justify-content-center align-items-center">
+            <i class="fa fa-spinner fa-spin fa-4x  text-white"></i>
+        </div>
+        <div class=" container text-center ">
+
+            <div class="row ">
+                <h2 class="text-center text-white fw-light mb-3">ContacUs...</h2>
+                <div class="col-md-6 ">
+                    <input type="text" placeholder="Enter Your Name" class="w-100 mb-4 text-white text-center"
+                        id="name">
+                    <div class="d-none alert alert-danger " id="userNameAlert">Special Characters and Numbers
+                        not allowed</div>
+                    <input type="text" placeholder="Enter Phone" class="w-100 mb-4 text-white text-center" id="phone">
+
+                    <div class="alert mt-1 alert-danger d-none" id="UserPhoneAlert">
+                        Enter valid Phone Number
+                    </div>
+                    <input type="password" placeholder="Enter Password" class="w-100  mb-4 text-white text-center"
+                        id="password">
+
+                    <div class="alert mt-1 alert-danger d-none" id="UserPassAlert">
+
+                        Enter valid password *Minimum eight characters, at least one letter and one number:*
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <input type="email" placeholder="Enter Email" class="w-100 mb-4 text-white text-center" id="email">
+                    <div class="alert mt-1 alert-danger d-none" id="UseremailAlert">
+                        Enter valid email. *Ex: xxx@yyy.zzz
+                    </div>
+                    <input type="text" placeholder="Enter Age" class="w-100  mb-4 text-center text-white" id="age">
+                    <div class="alert mt-1 alert-danger d-none" id="UserAgeAlert">
+                        Enter valid age
+                    </div>
+                    <input type="password" placeholder="Enter RePassword" class="w-100 mb-4 text-center text-white"
+                        id="repassword">
+                    <div class="alert mt-1 alert-danger d-none" id="UserRepassAlert">
+                        Enter valid RePassword
+                    </div>
+                </div>
+
+            </div>
+            <button class="text-center btn btn-outline-danger" id="submitBtn" disabled="true">Submit</button>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
